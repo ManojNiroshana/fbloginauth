@@ -47,8 +47,14 @@
             }
         });
     }
+    function info() {
+        FB.api('/me', 'get', { access_token: token, fields: 'id,name,gender,first_name,last_name_name_id' }, function(response) {
+            console.log(response.name);
+        });
+    }
 </script>
 <div id="demo"></div>
 <button onclick="login();">Login</button>
+<button onclick="info();">Info</button>
 </body>
 </html>
