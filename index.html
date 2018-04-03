@@ -48,9 +48,9 @@
         });
     }
     function info() {
-        FB.api('/me', 'get', { access_token: token, fields: 'id,name,gender,first_name,last_name_name_id' }, function(response) {
-            console.log(response.name);
-        });
+        FB.api('/me', 'get', { access_token: token, fields: 'id,name,gender' }, function(response) {
+    console.log(response);
+});
     }
 </script>
 <div id="demo"></div>
